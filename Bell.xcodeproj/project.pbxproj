@@ -1,0 +1,856 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C8158023FFC1290D31C73E5 /* Pods_Bell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCD9D6B9214BFAB918E81253 /* Pods_Bell.framework */; };
+		8A3D65716178F1CD2A302DB0 /* Pods_BellTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FAF760206269AE5F80DFAE /* Pods_BellTests.framework */; };
+		A5DE69211BD5637B006F2C55 /* libopencv_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5DE691F1BD5637B006F2C55 /* libopencv_core.a */; };
+		A5DE69221BD5637B006F2C55 /* libopencv_imgproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5DE69201BD5637B006F2C55 /* libopencv_imgproc.a */; };
+		A5E854D81BE929040098801B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E854D71BE929040098801B /* Accelerate.framework */; };
+		D534F1C71A324F63003C3AB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D534F1C61A324F63003C3AB4 /* AppDelegate.swift */; };
+		D534F1C91A324F63003C3AB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D534F1C81A324F63003C3AB4 /* ViewController.swift */; };
+		D534F1CC1A324F63003C3AB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D534F1CA1A324F63003C3AB4 /* Main.storyboard */; };
+		D534F1CE1A324F63003C3AB4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D534F1CD1A324F63003C3AB4 /* Images.xcassets */; };
+		D534F1D11A324F63003C3AB4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D534F1CF1A324F63003C3AB4 /* LaunchScreen.xib */; };
+		D534F1DD1A324F64003C3AB4 /* SampleApp_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D534F1DC1A324F64003C3AB4 /* SampleApp_SwiftTests.swift */; };
+		D534F1FA1A324F97003C3AB4 /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D534F1F91A324F97003C3AB4 /* libCardIO.a */; };
+		FC093552200389BC00C82C0D /* background (3).png in Resources */ = {isa = PBXBuildFile; fileRef = FC093550200389BC00C82C0D /* background (3).png */; };
+		FC093553200389BC00C82C0D /* scan-card-icon (1).png in Resources */ = {isa = PBXBuildFile; fileRef = FC093551200389BC00C82C0D /* scan-card-icon (1).png */; };
+		FC52379E1FFF6624006E1530 /* tv (2).png in Resources */ = {isa = PBXBuildFile; fileRef = FC52379D1FFF6624006E1530 /* tv (2).png */; };
+		FC5237A01FFF66DB006E1530 /* emilie's-phone1.png in Resources */ = {isa = PBXBuildFile; fileRef = FC52379F1FFF66DB006E1530 /* emilie's-phone1.png */; };
+		FC9C9F9B200611A5005771FF /* saved-card1.png in Resources */ = {isa = PBXBuildFile; fileRef = FC9C9F9A200611A5005771FF /* saved-card1.png */; };
+		FCC8C07A1F457274009B1E3C /* arrow (2).png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C0791F457274009B1E3C /* arrow (2).png */; };
+		FCC8C07C1F45727E009B1E3C /* background-im.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C07B1F45727E009B1E3C /* background-im.png */; };
+		FCC8C07E1F457291009B1E3C /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C07D1F457291009B1E3C /* background.png */; };
+		FCC8C0801F45729C009B1E3C /* background1 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C07F1F45729C009B1E3C /* background1 (1).png */; };
+		FCC8C0821F4572AD009B1E3C /* background1.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C0811F4572AD009B1E3C /* background1.png */; };
+		FCC8C0841F4572B8009B1E3C /* bell-logo (1).png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C0831F4572B8009B1E3C /* bell-logo (1).png */; };
+		FCC8C0861F4572C3009B1E3C /* bell-logo (2).png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C0851F4572C3009B1E3C /* bell-logo (2).png */; };
+		FCC8C0881F4572CE009B1E3C /* bell-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C0871F4572CE009B1E3C /* bell-logo.png */; };
+		FCC8C08A1F4572D9009B1E3C /* below-part2.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C0891F4572D9009B1E3C /* below-part2.png */; };
+		FCC8C08C1F4572E5009B1E3C /* bills.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C08B1F4572E5009B1E3C /* bills.png */; };
+		FCC8C08E1F4572F2009B1E3C /* blue-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C08D1F4572F2009B1E3C /* blue-arrow.png */; };
+		FCC8C0901F4572FD009B1E3C /* blue-background (1).png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C08F1F4572FD009B1E3C /* blue-background (1).png */; };
+		FCC8C0921F457308009B1E3C /* check-your-usage-or-add-data.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C0911F457308009B1E3C /* check-your-usage-or-add-data.png */; };
+		FCC8C0941F457313009B1E3C /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C0931F457313009B1E3C /* check.png */; };
+		FCC8C0961F45731F009B1E3C /* data.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C0951F45731F009B1E3C /* data.png */; };
+		FCC8C0AB1F45733F009B1E3C /* emilie.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C0971F45733F009B1E3C /* emilie.png */; };
+		FCC8C0AC1F45733F009B1E3C /* emilie's-phone.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C0981F45733F009B1E3C /* emilie's-phone.png */; };
+		FCC8C0AD1F45733F009B1E3C /* grab-a-travel-add-on.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C0991F45733F009B1E3C /* grab-a-travel-add-on.png */; };
+		FCC8C0AE1F45733F009B1E3C /* home-wifi.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C09A1F45733F009B1E3C /* home-wifi.png */; };
+		FCC8C0AF1F45733F009B1E3C /* internet (1).png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C09B1F45733F009B1E3C /* internet (1).png */; };
+		FCC8C0B01F45733F009B1E3C /* internet.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C09C1F45733F009B1E3C /* internet.png */; };
+		FCC8C0B11F45733F009B1E3C /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C09D1F45733F009B1E3C /* line.png */; };
+		FCC8C0B21F45733F009B1E3C /* long-distance.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C09E1F45733F009B1E3C /* long-distance.png */; };
+		FCC8C0B31F45733F009B1E3C /* mobile.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C09F1F45733F009B1E3C /* mobile.png */; };
+		FCC8C0B41F45733F009B1E3C /* paul's-phone.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C0A01F45733F009B1E3C /* paul's-phone.png */; };
+		FCC8C0B51F45733F009B1E3C /* pay-your-mobile-bill.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C0A11F45733F009B1E3C /* pay-your-mobile-bill.png */; };
+		FCC8C0B61F45733F009B1E3C /* pay.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C0A21F45733F009B1E3C /* pay.png */; };
+		FCC8C0B71F45733F009B1E3C /* premium.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C0A31F45733F009B1E3C /* premium.png */; };
+		FCC8C0B81F45733F009B1E3C /* speed.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C0A41F45733F009B1E3C /* speed.png */; };
+		FCC8C0B91F45733F009B1E3C /* Splash-screen.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C0A51F45733F009B1E3C /* Splash-screen.png */; };
+		FCC8C0BA1F45733F009B1E3C /* toggle-button-1 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C0A61F45733F009B1E3C /* toggle-button-1 (1).png */; };
+		FCC8C0BB1F45733F009B1E3C /* toggle-button-1.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C0A71F45733F009B1E3C /* toggle-button-1.png */; };
+		FCC8C0BC1F45733F009B1E3C /* TV.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C0A81F45733F009B1E3C /* TV.png */; };
+		FCC8C0BD1F45733F009B1E3C /* upper-part1.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C0A91F45733F009B1E3C /* upper-part1.png */; };
+		FCC8C0BE1F45733F009B1E3C /* voice.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC8C0AA1F45733F009B1E3C /* voice.png */; };
+		FCC8C0C01F457389009B1E3C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC8C0BF1F457389009B1E3C /* LoginViewController.swift */; };
+		FCC8C0C31F45759C009B1E3C /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC8C0C21F45759C009B1E3C /* LocalAuthentication.framework */; };
+		FCC8C0C51F4576B2009B1E3C /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC8C0C41F4576B2009B1E3C /* PageViewController.swift */; };
+		FCC8C0C91F4576EF009B1E3C /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC8C0C81F4576EF009B1E3C /* PageContentViewController.swift */; };
+		FCC8C2DE1F45826E009B1E3C /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC8C2DD1F45826E009B1E3C /* HomePageViewController.swift */; };
+		FCC8C2E21F4591AE009B1E3C /* BillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC8C2E11F4591AE009B1E3C /* BillViewController.swift */; };
+		FCC8C2E61F459DDF009B1E3C /* PhoneDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC8C2E51F459DDF009B1E3C /* PhoneDetailsViewController.swift */; };
+		FCC8C2E81F45A078009B1E3C /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC8C2E71F45A078009B1E3C /* ScanViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D534F1D71A324F63003C3AB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D534F1B91A324F63003C3AB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D534F1C01A324F63003C3AB4;
+			remoteInfo = "SampleApp-Swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F79DD67F72B948A3034F32A /* Pods-BellTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BellTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BellTests/Pods-BellTests.release.xcconfig"; sourceTree = "<group>"; };
+		254D1100273A408F6E13DE43 /* Pods-Bell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bell.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bell/Pods-Bell.release.xcconfig"; sourceTree = "<group>"; };
+		30FAF760206269AE5F80DFAE /* Pods_BellTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BellTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F072BD12503EC5535C25D28 /* Pods-BellTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BellTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BellTests/Pods-BellTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8952269DC41B03B13640E2CD /* Pods-Bell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bell/Pods-Bell.debug.xcconfig"; sourceTree = "<group>"; };
+		A5DE691F1BD5637B006F2C55 /* libopencv_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_core.a; sourceTree = "<group>"; };
+		A5DE69201BD5637B006F2C55 /* libopencv_imgproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_imgproc.a; sourceTree = "<group>"; };
+		A5E854D71BE929040098801B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		CCD9D6B9214BFAB918E81253 /* Pods_Bell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D534F1C11A324F63003C3AB4 /* Bell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D534F1C51A324F63003C3AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D534F1C61A324F63003C3AB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D534F1C81A324F63003C3AB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D534F1CB1A324F63003C3AB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D534F1CD1A324F63003C3AB4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D534F1D01A324F63003C3AB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D534F1D61A324F63003C3AB4 /* BellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D534F1DB1A324F64003C3AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D534F1DC1A324F64003C3AB4 /* SampleApp_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleApp_SwiftTests.swift; sourceTree = "<group>"; };
+		D534F1F11A324F97003C3AB4 /* CardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
+		D534F1F21A324F97003C3AB4 /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCreditCardInfo.h; sourceTree = "<group>"; };
+		D534F1F31A324F97003C3AB4 /* CardIODetectionMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIODetectionMode.h; sourceTree = "<group>"; };
+		D534F1F41A324F97003C3AB4 /* CardIOPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewController.h; sourceTree = "<group>"; };
+		D534F1F51A324F97003C3AB4 /* CardIOPaymentViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewControllerDelegate.h; sourceTree = "<group>"; };
+		D534F1F61A324F97003C3AB4 /* CardIOUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOUtilities.h; sourceTree = "<group>"; };
+		D534F1F71A324F97003C3AB4 /* CardIOView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOView.h; sourceTree = "<group>"; };
+		D534F1F81A324F97003C3AB4 /* CardIOViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOViewDelegate.h; sourceTree = "<group>"; };
+		D534F1F91A324F97003C3AB4 /* libCardIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCardIO.a; sourceTree = "<group>"; };
+		D5F80D3C1A32507E00338199 /* SampleApp-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleApp-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		FC093550200389BC00C82C0D /* background (3).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background (3).png"; path = "../../../../../Downloads/background (3).png"; sourceTree = "<group>"; };
+		FC093551200389BC00C82C0D /* scan-card-icon (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "scan-card-icon (1).png"; path = "../../../../../Downloads/scan-card-icon (1).png"; sourceTree = "<group>"; };
+		FC52379D1FFF6624006E1530 /* tv (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tv (2).png"; path = "../../../Bell_Images/tv (2).png"; sourceTree = "<group>"; };
+		FC52379F1FFF66DB006E1530 /* emilie's-phone1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "emilie's-phone1.png"; path = "../../../../emilie's-phone1.png"; sourceTree = "<group>"; };
+		FC9C9F9A200611A5005771FF /* saved-card1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "saved-card1.png"; path = "../../../../../Downloads/saved-card1.png"; sourceTree = "<group>"; };
+		FCC8C0791F457274009B1E3C /* arrow (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow (2).png"; path = "../../../Bell/arrow (2).png"; sourceTree = "<group>"; };
+		FCC8C07B1F45727E009B1E3C /* background-im.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background-im.png"; path = "../../../Bell/background-im.png"; sourceTree = "<group>"; };
+		FCC8C07D1F457291009B1E3C /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = ../../../Bell/background.png; sourceTree = "<group>"; };
+		FCC8C07F1F45729C009B1E3C /* background1 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background1 (1).png"; path = "../../../Bell/background1 (1).png"; sourceTree = "<group>"; };
+		FCC8C0811F4572AD009B1E3C /* background1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background1.png; path = ../../../Bell/background1.png; sourceTree = "<group>"; };
+		FCC8C0831F4572B8009B1E3C /* bell-logo (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bell-logo (1).png"; path = "../../../Bell/bell-logo (1).png"; sourceTree = "<group>"; };
+		FCC8C0851F4572C3009B1E3C /* bell-logo (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bell-logo (2).png"; path = "../../../Bell/bell-logo (2).png"; sourceTree = "<group>"; };
+		FCC8C0871F4572CE009B1E3C /* bell-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bell-logo.png"; path = "../../../Bell/bell-logo.png"; sourceTree = "<group>"; };
+		FCC8C0891F4572D9009B1E3C /* below-part2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "below-part2.png"; path = "../../../Bell/below-part2.png"; sourceTree = "<group>"; };
+		FCC8C08B1F4572E5009B1E3C /* bills.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bills.png; path = ../../../Bell/bills.png; sourceTree = "<group>"; };
+		FCC8C08D1F4572F2009B1E3C /* blue-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blue-arrow.png"; path = "../../../Bell/blue-arrow.png"; sourceTree = "<group>"; };
+		FCC8C08F1F4572FD009B1E3C /* blue-background (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blue-background (1).png"; path = "../../../Bell/blue-background (1).png"; sourceTree = "<group>"; };
+		FCC8C0911F457308009B1E3C /* check-your-usage-or-add-data.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "check-your-usage-or-add-data.png"; path = "../../../Bell/check-your-usage-or-add-data.png"; sourceTree = "<group>"; };
+		FCC8C0931F457313009B1E3C /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = check.png; path = ../../../Bell/check.png; sourceTree = "<group>"; };
+		FCC8C0951F45731F009B1E3C /* data.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = data.png; path = ../../../Bell/data.png; sourceTree = "<group>"; };
+		FCC8C0971F45733F009B1E3C /* emilie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = emilie.png; path = ../../../Bell/emilie.png; sourceTree = "<group>"; };
+		FCC8C0981F45733F009B1E3C /* emilie's-phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "emilie's-phone.png"; path = "../../../Bell/emilie's-phone.png"; sourceTree = "<group>"; };
+		FCC8C0991F45733F009B1E3C /* grab-a-travel-add-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grab-a-travel-add-on.png"; path = "../../../Bell/grab-a-travel-add-on.png"; sourceTree = "<group>"; };
+		FCC8C09A1F45733F009B1E3C /* home-wifi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home-wifi.png"; path = "../../../Bell/home-wifi.png"; sourceTree = "<group>"; };
+		FCC8C09B1F45733F009B1E3C /* internet (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "internet (1).png"; path = "../../../Bell/internet (1).png"; sourceTree = "<group>"; };
+		FCC8C09C1F45733F009B1E3C /* internet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = internet.png; path = ../../../Bell/internet.png; sourceTree = "<group>"; };
+		FCC8C09D1F45733F009B1E3C /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = line.png; path = ../../../Bell/line.png; sourceTree = "<group>"; };
+		FCC8C09E1F45733F009B1E3C /* long-distance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "long-distance.png"; path = "../../../Bell/long-distance.png"; sourceTree = "<group>"; };
+		FCC8C09F1F45733F009B1E3C /* mobile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mobile.png; path = ../../../Bell/mobile.png; sourceTree = "<group>"; };
+		FCC8C0A01F45733F009B1E3C /* paul's-phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "paul's-phone.png"; path = "../../../Bell/paul's-phone.png"; sourceTree = "<group>"; };
+		FCC8C0A11F45733F009B1E3C /* pay-your-mobile-bill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pay-your-mobile-bill.png"; path = "../../../Bell/pay-your-mobile-bill.png"; sourceTree = "<group>"; };
+		FCC8C0A21F45733F009B1E3C /* pay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pay.png; path = ../../../Bell/pay.png; sourceTree = "<group>"; };
+		FCC8C0A31F45733F009B1E3C /* premium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = premium.png; path = ../../../Bell/premium.png; sourceTree = "<group>"; };
+		FCC8C0A41F45733F009B1E3C /* speed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = speed.png; path = ../../../Bell/speed.png; sourceTree = "<group>"; };
+		FCC8C0A51F45733F009B1E3C /* Splash-screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Splash-screen.png"; path = "../../../Bell/Splash-screen.png"; sourceTree = "<group>"; };
+		FCC8C0A61F45733F009B1E3C /* toggle-button-1 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "toggle-button-1 (1).png"; path = "../../../Bell/toggle-button-1 (1).png"; sourceTree = "<group>"; };
+		FCC8C0A71F45733F009B1E3C /* toggle-button-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "toggle-button-1.png"; path = "../../../Bell/toggle-button-1.png"; sourceTree = "<group>"; };
+		FCC8C0A81F45733F009B1E3C /* TV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TV.png; path = ../../../Bell/TV.png; sourceTree = "<group>"; };
+		FCC8C0A91F45733F009B1E3C /* upper-part1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "upper-part1.png"; path = "../../../Bell/upper-part1.png"; sourceTree = "<group>"; };
+		FCC8C0AA1F45733F009B1E3C /* voice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = voice.png; path = ../../../Bell/voice.png; sourceTree = "<group>"; };
+		FCC8C0BF1F457389009B1E3C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FCC8C0C21F45759C009B1E3C /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		FCC8C0C41F4576B2009B1E3C /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		FCC8C0C81F4576EF009B1E3C /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageContentViewController.swift; path = ../PageContentViewController.swift; sourceTree = "<group>"; };
+		FCC8C2DD1F45826E009B1E3C /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		FCC8C2E11F4591AE009B1E3C /* BillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BillViewController.swift; path = ../BillViewController.swift; sourceTree = "<group>"; };
+		FCC8C2E51F459DDF009B1E3C /* PhoneDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhoneDetailsViewController.swift; path = ../PhoneDetailsViewController.swift; sourceTree = "<group>"; };
+		FCC8C2E71F45A078009B1E3C /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D534F1BE1A324F63003C3AB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC8C0C31F45759C009B1E3C /* LocalAuthentication.framework in Frameworks */,
+				D534F1FA1A324F97003C3AB4 /* libCardIO.a in Frameworks */,
+				A5DE69211BD5637B006F2C55 /* libopencv_core.a in Frameworks */,
+				A5DE69221BD5637B006F2C55 /* libopencv_imgproc.a in Frameworks */,
+				A5E854D81BE929040098801B /* Accelerate.framework in Frameworks */,
+				6C8158023FFC1290D31C73E5 /* Pods_Bell.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D534F1D31A324F63003C3AB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A3D65716178F1CD2A302DB0 /* Pods_BellTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26231993545311A8907FFA1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8952269DC41B03B13640E2CD /* Pods-Bell.debug.xcconfig */,
+				254D1100273A408F6E13DE43 /* Pods-Bell.release.xcconfig */,
+				7F072BD12503EC5535C25D28 /* Pods-BellTests.debug.xcconfig */,
+				1F79DD67F72B948A3034F32A /* Pods-BellTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D534F1B81A324F63003C3AB4 = {
+			isa = PBXGroup;
+			children = (
+				FCC8C0781F45725D009B1E3C /* Images */,
+				D534F1F01A324F97003C3AB4 /* CardIO */,
+				D534F1C31A324F63003C3AB4 /* SampleApp-Swift */,
+				D534F1D91A324F64003C3AB4 /* SampleApp-SwiftTests */,
+				D534F1C21A324F63003C3AB4 /* Products */,
+				FCC8C0C11F45759C009B1E3C /* Frameworks */,
+				26231993545311A8907FFA1B /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		D534F1C21A324F63003C3AB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D534F1C11A324F63003C3AB4 /* Bell.app */,
+				D534F1D61A324F63003C3AB4 /* BellTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D534F1C31A324F63003C3AB4 /* SampleApp-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				D534F1C61A324F63003C3AB4 /* AppDelegate.swift */,
+				D534F1C81A324F63003C3AB4 /* ViewController.swift */,
+				D534F1CA1A324F63003C3AB4 /* Main.storyboard */,
+				FCC8C2E71F45A078009B1E3C /* ScanViewController.swift */,
+				FCC8C2DD1F45826E009B1E3C /* HomePageViewController.swift */,
+				FCC8C2E51F459DDF009B1E3C /* PhoneDetailsViewController.swift */,
+				FCC8C2E11F4591AE009B1E3C /* BillViewController.swift */,
+				FCC8C0C41F4576B2009B1E3C /* PageViewController.swift */,
+				FCC8C0C81F4576EF009B1E3C /* PageContentViewController.swift */,
+				FCC8C0BF1F457389009B1E3C /* LoginViewController.swift */,
+				D534F1CD1A324F63003C3AB4 /* Images.xcassets */,
+				D534F1CF1A324F63003C3AB4 /* LaunchScreen.xib */,
+				D534F1C41A324F63003C3AB4 /* Supporting Files */,
+				D5F80D3C1A32507E00338199 /* SampleApp-Swift-Bridging-Header.h */,
+			);
+			path = "SampleApp-Swift";
+			sourceTree = "<group>";
+		};
+		D534F1C41A324F63003C3AB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D534F1C51A324F63003C3AB4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D534F1D91A324F64003C3AB4 /* SampleApp-SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				D534F1DC1A324F64003C3AB4 /* SampleApp_SwiftTests.swift */,
+				D534F1DA1A324F64003C3AB4 /* Supporting Files */,
+			);
+			path = "SampleApp-SwiftTests";
+			sourceTree = "<group>";
+		};
+		D534F1DA1A324F64003C3AB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D534F1DB1A324F64003C3AB4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D534F1F01A324F97003C3AB4 /* CardIO */ = {
+			isa = PBXGroup;
+			children = (
+				D534F1F11A324F97003C3AB4 /* CardIO.h */,
+				D534F1F21A324F97003C3AB4 /* CardIOCreditCardInfo.h */,
+				D534F1F31A324F97003C3AB4 /* CardIODetectionMode.h */,
+				D534F1F41A324F97003C3AB4 /* CardIOPaymentViewController.h */,
+				D534F1F51A324F97003C3AB4 /* CardIOPaymentViewControllerDelegate.h */,
+				D534F1F61A324F97003C3AB4 /* CardIOUtilities.h */,
+				D534F1F71A324F97003C3AB4 /* CardIOView.h */,
+				D534F1F81A324F97003C3AB4 /* CardIOViewDelegate.h */,
+				D534F1F91A324F97003C3AB4 /* libCardIO.a */,
+				A5DE691F1BD5637B006F2C55 /* libopencv_core.a */,
+				A5DE69201BD5637B006F2C55 /* libopencv_imgproc.a */,
+				A5E854D71BE929040098801B /* Accelerate.framework */,
+			);
+			name = CardIO;
+			path = ../CardIO;
+			sourceTree = "<group>";
+		};
+		FCC8C0781F45725D009B1E3C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FC9C9F9A200611A5005771FF /* saved-card1.png */,
+				FC093550200389BC00C82C0D /* background (3).png */,
+				FC093551200389BC00C82C0D /* scan-card-icon (1).png */,
+				FC52379F1FFF66DB006E1530 /* emilie's-phone1.png */,
+				FC52379D1FFF6624006E1530 /* tv (2).png */,
+				FCC8C0971F45733F009B1E3C /* emilie.png */,
+				FCC8C0981F45733F009B1E3C /* emilie's-phone.png */,
+				FCC8C0991F45733F009B1E3C /* grab-a-travel-add-on.png */,
+				FCC8C09A1F45733F009B1E3C /* home-wifi.png */,
+				FCC8C09B1F45733F009B1E3C /* internet (1).png */,
+				FCC8C09C1F45733F009B1E3C /* internet.png */,
+				FCC8C09D1F45733F009B1E3C /* line.png */,
+				FCC8C09E1F45733F009B1E3C /* long-distance.png */,
+				FCC8C09F1F45733F009B1E3C /* mobile.png */,
+				FCC8C0A01F45733F009B1E3C /* paul's-phone.png */,
+				FCC8C0A11F45733F009B1E3C /* pay-your-mobile-bill.png */,
+				FCC8C0A21F45733F009B1E3C /* pay.png */,
+				FCC8C0A31F45733F009B1E3C /* premium.png */,
+				FCC8C0A41F45733F009B1E3C /* speed.png */,
+				FCC8C0A51F45733F009B1E3C /* Splash-screen.png */,
+				FCC8C0A61F45733F009B1E3C /* toggle-button-1 (1).png */,
+				FCC8C0A71F45733F009B1E3C /* toggle-button-1.png */,
+				FCC8C0A81F45733F009B1E3C /* TV.png */,
+				FCC8C0A91F45733F009B1E3C /* upper-part1.png */,
+				FCC8C0AA1F45733F009B1E3C /* voice.png */,
+				FCC8C0951F45731F009B1E3C /* data.png */,
+				FCC8C0931F457313009B1E3C /* check.png */,
+				FCC8C0911F457308009B1E3C /* check-your-usage-or-add-data.png */,
+				FCC8C08F1F4572FD009B1E3C /* blue-background (1).png */,
+				FCC8C08D1F4572F2009B1E3C /* blue-arrow.png */,
+				FCC8C08B1F4572E5009B1E3C /* bills.png */,
+				FCC8C0891F4572D9009B1E3C /* below-part2.png */,
+				FCC8C0871F4572CE009B1E3C /* bell-logo.png */,
+				FCC8C0851F4572C3009B1E3C /* bell-logo (2).png */,
+				FCC8C0831F4572B8009B1E3C /* bell-logo (1).png */,
+				FCC8C0811F4572AD009B1E3C /* background1.png */,
+				FCC8C07F1F45729C009B1E3C /* background1 (1).png */,
+				FCC8C07D1F457291009B1E3C /* background.png */,
+				FCC8C07B1F45727E009B1E3C /* background-im.png */,
+				FCC8C0791F457274009B1E3C /* arrow (2).png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		FCC8C0C11F45759C009B1E3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCC8C0C21F45759C009B1E3C /* LocalAuthentication.framework */,
+				CCD9D6B9214BFAB918E81253 /* Pods_Bell.framework */,
+				30FAF760206269AE5F80DFAE /* Pods_BellTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D534F1C01A324F63003C3AB4 /* Bell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D534F1E01A324F64003C3AB4 /* Build configuration list for PBXNativeTarget "Bell" */;
+			buildPhases = (
+				1403A859AC7E9839B8362C49 /* [CP] Check Pods Manifest.lock */,
+				D534F1BD1A324F63003C3AB4 /* Sources */,
+				D534F1BE1A324F63003C3AB4 /* Frameworks */,
+				D534F1BF1A324F63003C3AB4 /* Resources */,
+				CA599618E229A48BDE3D415F /* [CP] Embed Pods Frameworks */,
+				49AD9441B9778DD444C73D4A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bell;
+			productName = "SampleApp-Swift";
+			productReference = D534F1C11A324F63003C3AB4 /* Bell.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D534F1D51A324F63003C3AB4 /* BellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D534F1E31A324F64003C3AB4 /* Build configuration list for PBXNativeTarget "BellTests" */;
+			buildPhases = (
+				A689589B7AA30F001F0B943B /* [CP] Check Pods Manifest.lock */,
+				D534F1D21A324F63003C3AB4 /* Sources */,
+				D534F1D31A324F63003C3AB4 /* Frameworks */,
+				D534F1D41A324F63003C3AB4 /* Resources */,
+				0BEB800F323671B36526B1DF /* [CP] Embed Pods Frameworks */,
+				3D02C82CC25C53765F3E4EF5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D534F1D81A324F63003C3AB4 /* PBXTargetDependency */,
+			);
+			name = BellTests;
+			productName = "SampleApp-SwiftTests";
+			productReference = D534F1D61A324F63003C3AB4 /* BellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D534F1B91A324F63003C3AB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Punskyy, Roman";
+				TargetAttributes = {
+					D534F1C01A324F63003C3AB4 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 6JK666BK2K;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					D534F1D51A324F63003C3AB4 = {
+						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0830;
+						TestTargetID = D534F1C01A324F63003C3AB4;
+					};
+				};
+			};
+			buildConfigurationList = D534F1BC1A324F63003C3AB4 /* Build configuration list for PBXProject "Bell" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+			);
+			mainGroup = D534F1B81A324F63003C3AB4;
+			productRefGroup = D534F1C21A324F63003C3AB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D534F1C01A324F63003C3AB4 /* Bell */,
+				D534F1D51A324F63003C3AB4 /* BellTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D534F1BF1A324F63003C3AB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC8C0BD1F45733F009B1E3C /* upper-part1.png in Resources */,
+				FCC8C0B31F45733F009B1E3C /* mobile.png in Resources */,
+				FCC8C0BA1F45733F009B1E3C /* toggle-button-1 (1).png in Resources */,
+				FCC8C0BB1F45733F009B1E3C /* toggle-button-1.png in Resources */,
+				FCC8C0B01F45733F009B1E3C /* internet.png in Resources */,
+				FCC8C0AB1F45733F009B1E3C /* emilie.png in Resources */,
+				FCC8C0AE1F45733F009B1E3C /* home-wifi.png in Resources */,
+				FCC8C0AF1F45733F009B1E3C /* internet (1).png in Resources */,
+				FCC8C0861F4572C3009B1E3C /* bell-logo (2).png in Resources */,
+				FCC8C08A1F4572D9009B1E3C /* below-part2.png in Resources */,
+				FCC8C07C1F45727E009B1E3C /* background-im.png in Resources */,
+				FCC8C07E1F457291009B1E3C /* background.png in Resources */,
+				FC093552200389BC00C82C0D /* background (3).png in Resources */,
+				FCC8C0921F457308009B1E3C /* check-your-usage-or-add-data.png in Resources */,
+				FCC8C0AD1F45733F009B1E3C /* grab-a-travel-add-on.png in Resources */,
+				D534F1CC1A324F63003C3AB4 /* Main.storyboard in Resources */,
+				FCC8C08C1F4572E5009B1E3C /* bills.png in Resources */,
+				FC5237A01FFF66DB006E1530 /* emilie's-phone1.png in Resources */,
+				FCC8C0B81F45733F009B1E3C /* speed.png in Resources */,
+				FCC8C0821F4572AD009B1E3C /* background1.png in Resources */,
+				FCC8C0BE1F45733F009B1E3C /* voice.png in Resources */,
+				FCC8C0901F4572FD009B1E3C /* blue-background (1).png in Resources */,
+				FC52379E1FFF6624006E1530 /* tv (2).png in Resources */,
+				FCC8C0941F457313009B1E3C /* check.png in Resources */,
+				FCC8C0B91F45733F009B1E3C /* Splash-screen.png in Resources */,
+				D534F1D11A324F63003C3AB4 /* LaunchScreen.xib in Resources */,
+				FCC8C0B11F45733F009B1E3C /* line.png in Resources */,
+				FCC8C0B61F45733F009B1E3C /* pay.png in Resources */,
+				FCC8C0B41F45733F009B1E3C /* paul's-phone.png in Resources */,
+				FCC8C0B71F45733F009B1E3C /* premium.png in Resources */,
+				FCC8C0961F45731F009B1E3C /* data.png in Resources */,
+				FC9C9F9B200611A5005771FF /* saved-card1.png in Resources */,
+				FC093553200389BC00C82C0D /* scan-card-icon (1).png in Resources */,
+				FCC8C0841F4572B8009B1E3C /* bell-logo (1).png in Resources */,
+				FCC8C0801F45729C009B1E3C /* background1 (1).png in Resources */,
+				FCC8C0B51F45733F009B1E3C /* pay-your-mobile-bill.png in Resources */,
+				FCC8C07A1F457274009B1E3C /* arrow (2).png in Resources */,
+				FCC8C08E1F4572F2009B1E3C /* blue-arrow.png in Resources */,
+				FCC8C0B21F45733F009B1E3C /* long-distance.png in Resources */,
+				D534F1CE1A324F63003C3AB4 /* Images.xcassets in Resources */,
+				FCC8C0881F4572CE009B1E3C /* bell-logo.png in Resources */,
+				FCC8C0AC1F45733F009B1E3C /* emilie's-phone.png in Resources */,
+				FCC8C0BC1F45733F009B1E3C /* TV.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D534F1D41A324F63003C3AB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BEB800F323671B36526B1DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BellTests/Pods-BellTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1403A859AC7E9839B8362C49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bell-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D02C82CC25C53765F3E4EF5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BellTests/Pods-BellTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49AD9441B9778DD444C73D4A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bell/Pods-Bell-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A689589B7AA30F001F0B943B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BellTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA599618E229A48BDE3D415F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Bell/Pods-Bell-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bell/Pods-Bell-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D534F1BD1A324F63003C3AB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC8C0C01F457389009B1E3C /* LoginViewController.swift in Sources */,
+				D534F1C91A324F63003C3AB4 /* ViewController.swift in Sources */,
+				FCC8C2E61F459DDF009B1E3C /* PhoneDetailsViewController.swift in Sources */,
+				FCC8C0C91F4576EF009B1E3C /* PageContentViewController.swift in Sources */,
+				FCC8C2E81F45A078009B1E3C /* ScanViewController.swift in Sources */,
+				FCC8C2E21F4591AE009B1E3C /* BillViewController.swift in Sources */,
+				D534F1C71A324F63003C3AB4 /* AppDelegate.swift in Sources */,
+				FCC8C2DE1F45826E009B1E3C /* HomePageViewController.swift in Sources */,
+				FCC8C0C51F4576B2009B1E3C /* PageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D534F1D21A324F63003C3AB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D534F1DD1A324F64003C3AB4 /* SampleApp_SwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D534F1D81A324F63003C3AB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D534F1C01A324F63003C3AB4 /* Bell */;
+			targetProxy = D534F1D71A324F63003C3AB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D534F1CA1A324F63003C3AB4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D534F1CB1A324F63003C3AB4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D534F1CF1A324F63003C3AB4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D534F1D01A324F63003C3AB4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D534F1DE1A324F64003C3AB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Neha Singh (K4LAJWA3N3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Neha Singh (K4LAJWA3N3)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lc++";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "SampleApp-Swift/SampleApp-Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D534F1DF1A324F64003C3AB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Neha Singh (K4LAJWA3N3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Neha Singh (K4LAJWA3N3)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-lc++";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "SampleApp-Swift/SampleApp-Swift-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D534F1E11A324F64003C3AB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8952269DC41B03B13640E2CD /* Pods-Bell.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6JK666BK2K;
+				INFOPLIST_FILE = "SampleApp-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					../CardIO,
+				);
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D534F1E21A324F64003C3AB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 254D1100273A408F6E13DE43 /* Pods-Bell.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6JK666BK2K;
+				INFOPLIST_FILE = "SampleApp-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					../CardIO,
+				);
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D534F1E41A324F64003C3AB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F072BD12503EC5535C25D28 /* Pods-BellTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SampleApp-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bell.app/Bell";
+			};
+			name = Debug;
+		};
+		D534F1E51A324F64003C3AB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F79DD67F72B948A3034F32A /* Pods-BellTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SampleApp-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bell.app/Bell";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D534F1BC1A324F63003C3AB4 /* Build configuration list for PBXProject "Bell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D534F1DE1A324F64003C3AB4 /* Debug */,
+				D534F1DF1A324F64003C3AB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D534F1E01A324F64003C3AB4 /* Build configuration list for PBXNativeTarget "Bell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D534F1E11A324F64003C3AB4 /* Debug */,
+				D534F1E21A324F64003C3AB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D534F1E31A324F64003C3AB4 /* Build configuration list for PBXNativeTarget "BellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D534F1E41A324F64003C3AB4 /* Debug */,
+				D534F1E51A324F64003C3AB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D534F1B91A324F63003C3AB4 /* Project object */;
+}

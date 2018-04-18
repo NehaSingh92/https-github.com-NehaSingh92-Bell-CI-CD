@@ -1,0 +1,6 @@
+framework module Pods_BellTests {
+  umbrella header "Pods-BellTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
